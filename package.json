@@ -1,0 +1,35 @@
+{
+  "name": "statinamic-cli",
+  "version": "1.0.0",
+  "description": "A cli tool for statinamic (static site generator)",
+  "main": "index.js",
+  "bin": {
+    "statinamic": "bin/pm.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thangngoc89/statinamic-cli.git"
+  },
+  "keywords": [
+    "statinamic",
+    "cli",
+    "static",
+    "site generator"
+  ],
+  "author": "Khoa Nguyen <hi@khoanguyen.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thangngoc89/statinamic-cli/issues"
+  },
+  "homepage": "https://github.com/thangngoc89/statinamic-cli#readme",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "inquirer": "^0.11.4"
+  },
+  "devDependencies": {
+    "fs-extra": "^0.26.5"
+  }
+}
