@@ -5,6 +5,7 @@ const program = require('commander')
 const path = require('path')
 const isEmptySync = require('../utils/isEmptySync')
 const inquirer = require('inquirer')
+const validUrl = require('valid-url')
 let dir
 
 program
@@ -45,7 +46,13 @@ const questions = [
   {
    type: 'input',
    name: 'url',
-   message: 'Homepage for your website'
+   message: 'Homepage url for your website',
+   validate: function (value) {
+     if (validUrl.isUri(value)) {
+       return true
+     }
+     return 'Please provide a valid url'
+   }
   }
 ]
 

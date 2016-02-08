@@ -27,7 +27,8 @@
   "homepage": "https://github.com/thangngoc89/statinamic-cli#readme",
   "dependencies": {
     "commander": "^2.9.0",
-    "inquirer": "^0.11.4"
+    "inquirer": "^0.11.4",
+    "valid-url": "^1.0.9"
   },
   "devDependencies": {
     "fs-extra": "^0.26.5"
